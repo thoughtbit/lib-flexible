@@ -36,7 +36,8 @@
         var isChrome = win.chrome;
         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
         var devicePixelRatio = win.devicePixelRatio;
-        if (isIPhone || isChrome) {
+        var isX5 = /TBS\/\d+/.test(win.navigator.userAgent)
+        if (isIPhone || isChrome || isX5) {
             // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
             if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
                 dpr = 3;
