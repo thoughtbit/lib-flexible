@@ -26,6 +26,10 @@
   "engines": {
     "node": ">= 0.8.0"
   },
+  "scripts": {
+    "build": "grunt dist",
+    "dev": "grunt dev"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
